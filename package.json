@@ -1,0 +1,17 @@
+{
+  "name": "near_earth_objects",
+  "version": "1.0.0",
+  "description": "near earth skill for alexa",
+  "main": "index.js",
+  "dependencies": {
+    "alexa-sdk": "^1.0.3",
+    "modules": "^0.4.0",
+    "moment": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tim chen",
+  "license": "ISC"
+}
