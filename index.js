@@ -45,7 +45,7 @@ var handlers = {
                 // console.log("received : " + JSON.stringify(myResult));
 
                 if(myResult.element_count === 1){
-                  this.emit(':tell', 'As of the last update from the Jet    Propulsion Lab Near Earth Object observatory, there is ' + myResult.element_count + " near earth object coming towards the planet Earth. It's name is " + myResult.near_earth_objects[currDate][0].name.replace(/[{()}]/g, '')
+                  this.emit(':tell', 'As of the last update from the Jet    Propulsion Lab Near Earth Object observatory, there is ' + myResult.element_count + " near earth object coming towards the planet Earth. It's name is " + myResult.near_earth_objects[currDate][0].name.replace(/[{()}]/g, '') + " will miss earth by about " + Math.round(nearestNEO / 1000000 ) * 1000000 + " miles."
                   );
 
                 } else {
