@@ -1,4 +1,4 @@
-// alexa-cookbook sample code
+// Based off alexa-cookbook sample code
 
 // There are three sections, Text Strings, Skill Code, and Helper Function(s).
 // You can copy and paste the entire file contents as the code for a new Lambda function,
@@ -17,7 +17,7 @@ var APP_ID = "amzn1.ask.skill.8ec286b9-c216-463d-8e31-eee2135e9cea"; //OPTIONAL:
 var SKILL_NAME = 'Close Approaches';
 
 var moment = require('moment');
-var currDate = moment().utcOffset('-0500').format("YYYY-MM-D")
+var currDate = moment().utcOffset('-0500').format("YYYY-MM-DD")
 var dateRangeURI = "start_date="+currDate+"&end_date="+currDate
 
 exports.handler = function(event, context, callback) {
